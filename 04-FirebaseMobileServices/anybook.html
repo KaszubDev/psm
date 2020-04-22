@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anybook</title>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+</head>
+<body>
+    <form>
+        <label for="author_name">Imię autora: </label><br/>
+        <input type="text" id="author_name"><br/>
+        <label for="author_surname">Nazwisko autora: </label><br/>
+        <input type="text" id="author_surname"><br/>
+        <label for="title">Tytuł książki: </label><br/>
+        <input type="text" id="title"><br/>
+        <label for="year">Rok wydania: </label><br/>
+        <input type="text" id="year"><br/>
+        <label for="genre">Gatunek: </label><br/>
+        <input type="text" id="genre"><br/>
+        <label for="isbn">ISBN: </label><br/>
+        <input type="text" id="isbn"><br/><br/>
+        <button type="button" id="add" onclick="add_book()">Add book</button>
+    </form>
+    <div style="display: none;" class="added_item">
+        <h3></h3>
+        <h4>Tytuł: </h4>
+        <h4>Autor: </h4>
+        <h4>Gatunek: </h4>
+        <h4>Rok wydania: </h4>
+        <h4>ISBN: </h4>
+    </div>
+    <script src="./anybook.js"></script>
+</body>
+</html>

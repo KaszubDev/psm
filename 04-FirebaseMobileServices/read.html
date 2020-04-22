@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+    <style>
+    table {
+        border-collapse: collapse;
+        text-align: center;
+        margin: 0 auto;
+    }
+    table, th, td {
+        border: 1px solid black;
+        padding: 5px;
+    }
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Tytuł</th>
+            <th>Imię autora</th>
+            <th>Nazwisko autora</th>
+            <th>Rok wydania</th>
+            <th>Gatunek</th>
+            <th>Numer ISBN</th>
+        </tr>
+    </table>
+    <script src="./read.js"></script>
+</body>
+</html>
